@@ -17,3 +17,26 @@ header{
   gap: 1rem;
   margin-top: 1rem;
 }
+.cardContainer{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+  gap: 2rem;
+  margin-top: 20px;
+  place-items: center;
+}
+.card {
+  height: 300px;
+  width: 200px;
+  background-color: red;
+}
+.card img {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+}
+.card:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}

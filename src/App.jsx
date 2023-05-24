@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import ScoreBoard from './components/ScoreBoard'
+import CardContainer from './components/CardContainer'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header></Header>
       <ScoreBoard topScore={topScore} currentScore={score}></ScoreBoard>
+      <CardContainer></CardContainer>
     </>
   )
 }
